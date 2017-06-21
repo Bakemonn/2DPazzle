@@ -13,7 +13,8 @@
         if (Input.GetMouseButtonUp(0))
         {
             if (selected)
-            {
+			{
+				ScoreScript.score += 5;
                 Destroy(gameObject);
             }
         }
@@ -33,11 +34,10 @@
             GameController.nowblock = 0;
             Debug.Log("InG");
         }
-    }    public void DestroyGreen()
+    }    /*    public void DestroyGreen()
     {
         if (selected)
         {
-            Debug.Log("Test");
             Destroy(gameObject);
         }
-    }}
+    }    */}

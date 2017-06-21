@@ -6,7 +6,8 @@
         }        if (Input.GetMouseButtonUp(0))
         {
             if (selected)
-            {
+			{
+				ScoreScript.score += 5;
                 Destroy(gameObject);
             }
         }    }    void OnMouseDown()    {        GameController.nowblock = 1;        Debug.Log(GameController.nowblock);        selected = true;    }    void OnMouseUp()
